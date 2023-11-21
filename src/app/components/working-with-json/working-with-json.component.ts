@@ -31,7 +31,7 @@ export class WorkingWithJsonComponent {
             if (!insideQuotes && (char === ' ' || char === '\n')) {
                 continue;
             }
-
+ 
             result += char;
         }
         return result;
