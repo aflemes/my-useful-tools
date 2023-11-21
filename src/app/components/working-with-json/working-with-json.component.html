@@ -1,0 +1,9 @@
+<div fxLayoutAlign="center center" [style.height.vh]="100">
+    <div fxFlex="60%" fxLayout="row" fxLayoutAlign="space-between center">
+        <textarea fxFlex="45" rows="15" placeholder="Coloque o JSON aqui..." [(ngModel)]="toConvert"></textarea>
+        <button mat-icon-button [style.height.px]="30" (click)="removeSpaces()">
+            <mat-icon class="material-icons icon">arrow_forward</mat-icon>
+        </button>
+        <textarea fxFlex="45" rows="15" disabled [(ngModel)]="converted"></textarea>
+    </div>
+</div>    
