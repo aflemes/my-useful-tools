@@ -1,0 +1,32 @@
+.example-container {
+    width: 100%;    
+}
+
+.example-sidenav-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.example-sidenav {
+    user-select: none;
+}
+
+.drawer-container {
+    width: 100%;    
+    height: calc(100vh - 7vh);
+    position: absolute;
+}
+
+.icon{
+    
+}
+.label{    
+    margin-left: 5px;
+}
+
+.navigation-item {
+    &.active {
+        background: orange;        
+    }
+}

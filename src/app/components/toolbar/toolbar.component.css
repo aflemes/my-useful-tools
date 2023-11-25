@@ -1,0 +1,20 @@
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+mat-toolbar{
+    background-color: #857e7e;
+}
+
+.toolbar-menu-icon {
+    cursor: pointer;
+    color: white;
+    &:hover {
+        color: orange;
+    }
+}
+
+.main-toolbar{
+    position: absolute;
+    z-index: 1000;    
+}

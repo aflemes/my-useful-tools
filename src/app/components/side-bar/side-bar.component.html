@@ -1,0 +1,25 @@
+<mat-sidenav-container class="drawer-container" autosize>
+    <mat-sidenav class="mat-elevation-z6" mode="side" [opened]="isOpened">
+        <mat-nav-list>
+            <mat-list-item>
+                <a routerLink="/home" class="navigation-item">
+                    <mat-icon mat-list-icon class="icon">home</mat-icon>
+                    <span class="label">Home</span>
+                </a>
+            </mat-list-item>
+            <mat-list-item>                
+                <a routerLink="/working-with-json">
+                    <img class="icon" src="../../../assets/icons/icons8-json-24.png"/>
+                    <span class="label">JSON fixer</span>
+                </a>                
+            </mat-list-item>
+        </mat-nav-list>        
+    </mat-sidenav>
+
+    <div class="example-sidenav-content">
+        
+    </div>
+
+    <router-outlet></router-outlet>
+
+</mat-sidenav-container>

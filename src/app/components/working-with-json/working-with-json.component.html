@@ -1,9 +1,25 @@
-<div fxLayoutAlign="center center" [style.height.vh]="100">
-    <div fxFlex="60%" fxLayout="row" fxLayoutAlign="space-between center">
-        <textarea fxFlex="45" rows="15" placeholder="Coloque o JSON aqui..." [(ngModel)]="toConvert"></textarea>
-        <button mat-icon-button [style.height.px]="30" (click)="removeSpaces()">
-            <mat-icon class="material-icons icon">arrow_forward</mat-icon>
-        </button>
-        <textarea fxFlex="45" rows="15" disabled [(ngModel)]="converted"></textarea>
+ 
+<div fxLayoutAlign="center center" class="main">
+    <div fxLayout="column" fxFlex="60">
+        <div fxFlex fxLayout="row" fxLayoutAlign="space-between center">
+            <mat-form-field appearance="outline" fxFlex="45">
+                <mat-label>Coloque o JSON aqui...</mat-label>
+                <textarea matInput rows="12" [(ngModel)]="toConvert"></textarea>
+            </mat-form-field>
+            <button mat-icon-button [style.height.px]="30" (click)="converter()">
+                <mat-icon class="material-icons icon">arrow_forward</mat-icon>
+            </button>
+
+            <mat-form-field appearance="outline" fxFlex="45">
+                <textarea matInput rows="12" [(ngModel)]="converted"></textarea>
+            </mat-form-field>        
+        </div>
+        <div fxLayout="row">
+            <mat-radio-group aria-label="Select an option" [(ngModel)]="optionSelected">
+                <mat-radio-button value=1 selected>Remover Espaços</mat-radio-button>
+                <mat-radio-button value=2>Stringify</mat-radio-button>
+                <mat-radio-button value=3>Remover Espaços e Stringify</mat-radio-button>
+            </mat-radio-group>          
+        </div>
     </div>
-</div>    
+</div>     

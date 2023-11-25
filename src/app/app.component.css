@@ -1,0 +1,12 @@
+app-toolbar{
+    display: flex;
+    height: 7vh;    
+}
+
+app-side-bar{
+    height: calc(100vh - 7vh);
+}
+
+body {
+    font-family: AzoSans;
+}
